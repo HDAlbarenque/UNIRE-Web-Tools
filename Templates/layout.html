@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Web Tools</title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for("static", filename="style.css") }}">
+</head>
+<body>
+	<header class="main-head">
+		<nav>
+			<h1 id="logo">Web Tool</h1>
+			<ul>
+				<li><a href="{{ url_for("inicio") }}">Inicio</a></li>
+				<li><a href="{{ url_for("verificar_url") }}">Verif.URL</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	{% block body %}
+	{% endblock body %}
+
+</body
+</html>
